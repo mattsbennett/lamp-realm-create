@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D34172E3C66632946D8FE64 /* Pods_Lamp_Realm_Create.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A8745DA68E57F22406B83E /* Pods_Lamp_Realm_Create.framework */; };
+		A4B9391B1B149658B360D34E /* Pods_Lamp_Realm_CreateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45DF2EFEF424451B24E86E4 /* Pods_Lamp_Realm_CreateTests.framework */; };
+		B861BEFC2B43609C001CA38E /* translations.json in Resources */ = {isa = PBXBuildFile; fileRef = B861BEFB2B43609C001CA38E /* translations.json */; };
+		B8FC32F52B3CC83C009C544D /* Lamp_Realm_CreateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC32F42B3CC83C009C544D /* Lamp_Realm_CreateApp.swift */; };
+		B8FC32F72B3CC83C009C544D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC32F62B3CC83C009C544D /* ContentView.swift */; };
+		B8FC32F92B3CC83D009C544D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FC32F82B3CC83D009C544D /* Assets.xcassets */; };
+		B8FC32FC2B3CC83D009C544D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FC32FB2B3CC83D009C544D /* Preview Assets.xcassets */; };
+		B8FC33072B3CC83D009C544D /* Lamp_Realm_CreateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC33062B3CC83D009C544D /* Lamp_Realm_CreateTests.swift */; };
+		B8FC33112B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC33102B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift */; };
+		B8FC33132B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC33122B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift */; };
+		B8FC33302B3CEEBA009C544D /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC33272B3CEEB8009C544D /* genres.json */; };
+		B8FC33312B3CEEBA009C544D /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC33282B3CEEB8009C544D /* books.json */; };
+		B8FC33382B3DFF5A009C544D /* plans.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC33372B3DFF59009C544D /* plans.json */; };
+		B8FC334C2B3F51C8009C544D /* cross_references.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC334A2B3F51C8009C544D /* cross_references.json */; };
+		DDE872ACF01B57AB0CA2DC8A /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBA1FCF9E12158620C8BC78 /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8FC33032B3CC83D009C544D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8FC32E92B3CC83C009C544D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8FC32F02B3CC83C009C544D;
+			remoteInfo = "Lamp Realm Create";
+		};
+		B8FC330D2B3CC83D009C544D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8FC32E92B3CC83C009C544D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8FC32F02B3CC83C009C544D;
+			remoteInfo = "Lamp Realm Create";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E5A0B822B8A8BAD145900B /* Pods-Lamp Realm Create-Lamp Realm CreateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm Create-Lamp Realm CreateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lamp Realm Create-Lamp Realm CreateUITests/Pods-Lamp Realm Create-Lamp Realm CreateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		110B805426BCEFB415B6E8B6 /* Pods-Lamp Realm Create-Lamp Realm CreateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm Create-Lamp Realm CreateUITests.release.xcconfig"; path = "Target Support Files/Pods-Lamp Realm Create-Lamp Realm CreateUITests/Pods-Lamp Realm Create-Lamp Realm CreateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53A8745DA68E57F22406B83E /* Pods_Lamp_Realm_Create.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lamp_Realm_Create.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFADB36697D9FEE3CBD76A6 /* Pods-Lamp Realm CreateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm CreateTests.release.xcconfig"; path = "Target Support Files/Pods-Lamp Realm CreateTests/Pods-Lamp Realm CreateTests.release.xcconfig"; sourceTree = "<group>"; };
+		739DC69FCCF9B377EC2C70A7 /* Pods-Lamp Realm CreateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm CreateTests.debug.xcconfig"; path = "Target Support Files/Pods-Lamp Realm CreateTests/Pods-Lamp Realm CreateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78F7CD09672CBDB37DCD9DF1 /* Pods-Lamp Realm Create.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm Create.debug.xcconfig"; path = "Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create.debug.xcconfig"; sourceTree = "<group>"; };
+		9225F79211648BB218C4A911 /* Pods-Lamp Realm Create.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm Create.release.xcconfig"; path = "Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create.release.xcconfig"; sourceTree = "<group>"; };
+		B861BEFB2B43609C001CA38E /* translations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translations.json; sourceTree = "<group>"; };
+		B8FC32F12B3CC83C009C544D /* Lamp Realm Create.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lamp Realm Create.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FC32F42B3CC83C009C544D /* Lamp_Realm_CreateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateApp.swift; sourceTree = "<group>"; };
+		B8FC32F62B3CC83C009C544D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8FC32F82B3CC83D009C544D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8FC32FB2B3CC83D009C544D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8FC32FD2B3CC83D009C544D /* Lamp_Realm_Create.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lamp_Realm_Create.entitlements; sourceTree = "<group>"; };
+		B8FC33022B3CC83D009C544D /* Lamp Realm CreateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lamp Realm CreateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FC33062B3CC83D009C544D /* Lamp_Realm_CreateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateTests.swift; sourceTree = "<group>"; };
+		B8FC330C2B3CC83D009C544D /* Lamp Realm CreateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lamp Realm CreateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FC33102B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateUITests.swift; sourceTree = "<group>"; };
+		B8FC33122B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8FC33272B3CEEB8009C544D /* genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
+		B8FC33282B3CEEB8009C544D /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = books.json; path = "../../../../SynologyDrive/Work/Personal/Bible App/schema/seed_data/books.json"; sourceTree = "<group>"; };
+		B8FC33372B3DFF59009C544D /* plans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plans.json; sourceTree = "<group>"; };
+		B8FC334A2B3F51C8009C544D /* cross_references.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_references.json; sourceTree = "<group>"; };
+		C45DF2EFEF424451B24E86E4 /* Pods_Lamp_Realm_CreateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lamp_Realm_CreateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCBA1FCF9E12158620C8BC78 /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8FC32EE2B3CC83C009C544D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D34172E3C66632946D8FE64 /* Pods_Lamp_Realm_Create.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC32FF2B3CC83D009C544D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B9391B1B149658B360D34E /* Pods_Lamp_Realm_CreateTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC33092B3CC83D009C544D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE872ACF01B57AB0CA2DC8A /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C90525B7A850821A515D1D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53A8745DA68E57F22406B83E /* Pods_Lamp_Realm_Create.framework */,
+				CCBA1FCF9E12158620C8BC78 /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework */,
+				C45DF2EFEF424451B24E86E4 /* Pods_Lamp_Realm_CreateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8FC32E82B3CC83C009C544D = {
+			isa = PBXGroup;
+			children = (
+				B8FC32F32B3CC83C009C544D /* Lamp Realm Create */,
+				B8FC33052B3CC83D009C544D /* Lamp Realm CreateTests */,
+				B8FC330F2B3CC83D009C544D /* Lamp Realm CreateUITests */,
+				B8FC32F22B3CC83C009C544D /* Products */,
+				F13F1BF345E05C40EA5825CE /* Pods */,
+				9C90525B7A850821A515D1D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8FC32F22B3CC83C009C544D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8FC32F12B3CC83C009C544D /* Lamp Realm Create.app */,
+				B8FC33022B3CC83D009C544D /* Lamp Realm CreateTests.xctest */,
+				B8FC330C2B3CC83D009C544D /* Lamp Realm CreateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8FC32F32B3CC83C009C544D /* Lamp Realm Create */ = {
+			isa = PBXGroup;
+			children = (
+				B8FC32F42B3CC83C009C544D /* Lamp_Realm_CreateApp.swift */,
+				B8FC32F62B3CC83C009C544D /* ContentView.swift */,
+				B8FC33282B3CEEB8009C544D /* books.json */,
+				B8FC334A2B3F51C8009C544D /* cross_references.json */,
+				B861BEFB2B43609C001CA38E /* translations.json */,
+				B8FC33372B3DFF59009C544D /* plans.json */,
+				B8FC33272B3CEEB8009C544D /* genres.json */,
+				B8FC32F82B3CC83D009C544D /* Assets.xcassets */,
+				B8FC32FD2B3CC83D009C544D /* Lamp_Realm_Create.entitlements */,
+				B8FC32FA2B3CC83D009C544D /* Preview Content */,
+			);
+			path = "Lamp Realm Create";
+			sourceTree = "<group>";
+		};
+		B8FC32FA2B3CC83D009C544D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8FC32FB2B3CC83D009C544D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8FC33052B3CC83D009C544D /* Lamp Realm CreateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8FC33062B3CC83D009C544D /* Lamp_Realm_CreateTests.swift */,
+			);
+			path = "Lamp Realm CreateTests";
+			sourceTree = "<group>";
+		};
+		B8FC330F2B3CC83D009C544D /* Lamp Realm CreateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8FC33102B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift */,
+				B8FC33122B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift */,
+			);
+			path = "Lamp Realm CreateUITests";
+			sourceTree = "<group>";
+		};
+		F13F1BF345E05C40EA5825CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78F7CD09672CBDB37DCD9DF1 /* Pods-Lamp Realm Create.debug.xcconfig */,
+				9225F79211648BB218C4A911 /* Pods-Lamp Realm Create.release.xcconfig */,
+				05E5A0B822B8A8BAD145900B /* Pods-Lamp Realm Create-Lamp Realm CreateUITests.debug.xcconfig */,
+				110B805426BCEFB415B6E8B6 /* Pods-Lamp Realm Create-Lamp Realm CreateUITests.release.xcconfig */,
+				739DC69FCCF9B377EC2C70A7 /* Pods-Lamp Realm CreateTests.debug.xcconfig */,
+				6FFADB36697D9FEE3CBD76A6 /* Pods-Lamp Realm CreateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8FC32F02B3CC83C009C544D /* Lamp Realm Create */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FC33162B3CC83D009C544D /* Build configuration list for PBXNativeTarget "Lamp Realm Create" */;
+			buildPhases = (
+				1D11C53067402A0AB36E5A50 /* [CP] Check Pods Manifest.lock */,
+				B8FC32ED2B3CC83C009C544D /* Sources */,
+				B8FC32EE2B3CC83C009C544D /* Frameworks */,
+				B8FC32EF2B3CC83C009C544D /* Resources */,
+				F695CD096881DAE57C0BDA7F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lamp Realm Create";
+			productName = "Lamp Realm Create";
+			productReference = B8FC32F12B3CC83C009C544D /* Lamp Realm Create.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8FC33012B3CC83D009C544D /* Lamp Realm CreateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FC33192B3CC83D009C544D /* Build configuration list for PBXNativeTarget "Lamp Realm CreateTests" */;
+			buildPhases = (
+				4763A2AA9D565EC922DEF020 /* [CP] Check Pods Manifest.lock */,
+				B8FC32FE2B3CC83D009C544D /* Sources */,
+				B8FC32FF2B3CC83D009C544D /* Frameworks */,
+				B8FC33002B3CC83D009C544D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8FC33042B3CC83D009C544D /* PBXTargetDependency */,
+			);
+			name = "Lamp Realm CreateTests";
+			productName = "Lamp Realm CreateTests";
+			productReference = B8FC33022B3CC83D009C544D /* Lamp Realm CreateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8FC330B2B3CC83D009C544D /* Lamp Realm CreateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FC331C2B3CC83D009C544D /* Build configuration list for PBXNativeTarget "Lamp Realm CreateUITests" */;
+			buildPhases = (
+				B3E671BF3F615FDD7E4E9919 /* [CP] Check Pods Manifest.lock */,
+				B8FC33082B3CC83D009C544D /* Sources */,
+				B8FC33092B3CC83D009C544D /* Frameworks */,
+				B8FC330A2B3CC83D009C544D /* Resources */,
+				86284FBC090431C99DF1BF1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8FC330E2B3CC83D009C544D /* PBXTargetDependency */,
+			);
+			name = "Lamp Realm CreateUITests";
+			productName = "Lamp Realm CreateUITests";
+			productReference = B8FC330C2B3CC83D009C544D /* Lamp Realm CreateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8FC32E92B3CC83C009C544D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B8FC32F02B3CC83C009C544D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B8FC33012B3CC83D009C544D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B8FC32F02B3CC83C009C544D;
+					};
+					B8FC330B2B3CC83D009C544D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B8FC32F02B3CC83C009C544D;
+					};
+				};
+			};
+			buildConfigurationList = B8FC32EC2B3CC83C009C544D /* Build configuration list for PBXProject "Lamp Realm Create" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8FC32E82B3CC83C009C544D;
+			productRefGroup = B8FC32F22B3CC83C009C544D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8FC32F02B3CC83C009C544D /* Lamp Realm Create */,
+				B8FC33012B3CC83D009C544D /* Lamp Realm CreateTests */,
+				B8FC330B2B3CC83D009C544D /* Lamp Realm CreateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8FC32EF2B3CC83C009C544D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FC33382B3DFF5A009C544D /* plans.json in Resources */,
+				B861BEFC2B43609C001CA38E /* translations.json in Resources */,
+				B8FC33312B3CEEBA009C544D /* books.json in Resources */,
+				B8FC32FC2B3CC83D009C544D /* Preview Assets.xcassets in Resources */,
+				B8FC334C2B3F51C8009C544D /* cross_references.json in Resources */,
+				B8FC33302B3CEEBA009C544D /* genres.json in Resources */,
+				B8FC32F92B3CC83D009C544D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC33002B3CC83D009C544D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC330A2B3CC83D009C544D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D11C53067402A0AB36E5A50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lamp Realm Create-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4763A2AA9D565EC922DEF020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lamp Realm CreateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86284FBC090431C99DF1BF1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lamp Realm Create-Lamp Realm CreateUITests/Pods-Lamp Realm Create-Lamp Realm CreateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lamp Realm Create-Lamp Realm CreateUITests/Pods-Lamp Realm Create-Lamp Realm CreateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lamp Realm Create-Lamp Realm CreateUITests/Pods-Lamp Realm Create-Lamp Realm CreateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E671BF3F615FDD7E4E9919 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lamp Realm Create-Lamp Realm CreateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F695CD096881DAE57C0BDA7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8FC32ED2B3CC83C009C544D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FC32F72B3CC83C009C544D /* ContentView.swift in Sources */,
+				B8FC32F52B3CC83C009C544D /* Lamp_Realm_CreateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC32FE2B3CC83D009C544D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FC33072B3CC83D009C544D /* Lamp_Realm_CreateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC33082B3CC83D009C544D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FC33132B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift in Sources */,
+				B8FC33112B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8FC33042B3CC83D009C544D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8FC32F02B3CC83C009C544D /* Lamp Realm Create */;
+			targetProxy = B8FC33032B3CC83D009C544D /* PBXContainerItemProxy */;
+		};
+		B8FC330E2B3CC83D009C544D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8FC32F02B3CC83C009C544D /* Lamp Realm Create */;
+			targetProxy = B8FC330D2B3CC83D009C544D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B8FC33142B3CC83D009C544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8FC33152B3CC83D009C544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B8FC33172B3CC83D009C544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F7CD09672CBDB37DCD9DF1 /* Pods-Lamp Realm Create.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Lamp Realm Create/Lamp_Realm_Create.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lamp Realm Create/Preview Content\"";
+				DEVELOPMENT_TEAM = BM8474Q7J2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neus.Lamp-Realm-Create";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8FC33182B3CC83D009C544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9225F79211648BB218C4A911 /* Pods-Lamp Realm Create.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Lamp Realm Create/Lamp_Realm_Create.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lamp Realm Create/Preview Content\"";
+				DEVELOPMENT_TEAM = BM8474Q7J2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neus.Lamp-Realm-Create";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B8FC331A2B3CC83D009C544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739DC69FCCF9B377EC2C70A7 /* Pods-Lamp Realm CreateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N53GLND6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neus.Lamp-Realm-CreateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lamp Realm Create.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lamp Realm Create";
+			};
+			name = Debug;
+		};
+		B8FC331B2B3CC83D009C544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FFADB36697D9FEE3CBD76A6 /* Pods-Lamp Realm CreateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N53GLND6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neus.Lamp-Realm-CreateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lamp Realm Create.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lamp Realm Create";
+			};
+			name = Release;
+		};
+		B8FC331D2B3CC83D009C544D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E5A0B822B8A8BAD145900B /* Pods-Lamp Realm Create-Lamp Realm CreateUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N53GLND6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neus.Lamp-Realm-CreateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lamp Realm Create";
+			};
+			name = Debug;
+		};
+		B8FC331E2B3CC83D009C544D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110B805426BCEFB415B6E8B6 /* Pods-Lamp Realm Create-Lamp Realm CreateUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N53GLND6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neus.Lamp-Realm-CreateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lamp Realm Create";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8FC32EC2B3CC83C009C544D /* Build configuration list for PBXProject "Lamp Realm Create" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FC33142B3CC83D009C544D /* Debug */,
+				B8FC33152B3CC83D009C544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FC33162B3CC83D009C544D /* Build configuration list for PBXNativeTarget "Lamp Realm Create" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FC33172B3CC83D009C544D /* Debug */,
+				B8FC33182B3CC83D009C544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FC33192B3CC83D009C544D /* Build configuration list for PBXNativeTarget "Lamp Realm CreateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FC331A2B3CC83D009C544D /* Debug */,
+				B8FC331B2B3CC83D009C544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FC331C2B3CC83D009C544D /* Build configuration list for PBXNativeTarget "Lamp Realm CreateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FC331D2B3CC83D009C544D /* Debug */,
+				B8FC331E2B3CC83D009C544D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8FC32E92B3CC83C009C544D /* Project object */;
+}
