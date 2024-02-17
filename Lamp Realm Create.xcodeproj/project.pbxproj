@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D34172E3C66632946D8FE64 /* Pods_Lamp_Realm_Create.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A8745DA68E57F22406B83E /* Pods_Lamp_Realm_Create.framework */; };
 		A4B9391B1B149658B360D34E /* Pods_Lamp_Realm_CreateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45DF2EFEF424451B24E86E4 /* Pods_Lamp_Realm_CreateTests.framework */; };
+		B82B7EC62B7F163400D4095E /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = B82B7EC52B7F163400D4095E /* books.json */; };
+		B82B7ECE2B805C8F00D4095E /* plans.json in Resources */ = {isa = PBXBuildFile; fileRef = B82B7ECD2B805C8F00D4095E /* plans.json */; };
 		B861BEFC2B43609C001CA38E /* translations.json in Resources */ = {isa = PBXBuildFile; fileRef = B861BEFB2B43609C001CA38E /* translations.json */; };
 		B8FC32F52B3CC83C009C544D /* Lamp_Realm_CreateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC32F42B3CC83C009C544D /* Lamp_Realm_CreateApp.swift */; };
 		B8FC32F72B3CC83C009C544D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC32F62B3CC83C009C544D /* ContentView.swift */; };
@@ -18,8 +20,6 @@
 		B8FC33112B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC33102B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift */; };
 		B8FC33132B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC33122B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift */; };
 		B8FC33302B3CEEBA009C544D /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC33272B3CEEB8009C544D /* genres.json */; };
-		B8FC33312B3CEEBA009C544D /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC33282B3CEEB8009C544D /* books.json */; };
-		B8FC33382B3DFF5A009C544D /* plans.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC33372B3DFF59009C544D /* plans.json */; };
 		B8FC334C2B3F51C8009C544D /* cross_references.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FC334A2B3F51C8009C544D /* cross_references.json */; };
 		DDE872ACF01B57AB0CA2DC8A /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBA1FCF9E12158620C8BC78 /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +49,8 @@
 		739DC69FCCF9B377EC2C70A7 /* Pods-Lamp Realm CreateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm CreateTests.debug.xcconfig"; path = "Target Support Files/Pods-Lamp Realm CreateTests/Pods-Lamp Realm CreateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78F7CD09672CBDB37DCD9DF1 /* Pods-Lamp Realm Create.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm Create.debug.xcconfig"; path = "Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create.debug.xcconfig"; sourceTree = "<group>"; };
 		9225F79211648BB218C4A911 /* Pods-Lamp Realm Create.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lamp Realm Create.release.xcconfig"; path = "Target Support Files/Pods-Lamp Realm Create/Pods-Lamp Realm Create.release.xcconfig"; sourceTree = "<group>"; };
+		B82B7EC52B7F163400D4095E /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = books.json; path = "../../../../SynologyDrive/Work/Personal/Lamp Bible/schema/seed_data/books.json"; sourceTree = "<group>"; };
+		B82B7ECD2B805C8F00D4095E /* plans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plans.json; sourceTree = "<group>"; };
 		B861BEFB2B43609C001CA38E /* translations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = translations.json; sourceTree = "<group>"; };
 		B8FC32F12B3CC83C009C544D /* Lamp Realm Create.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lamp Realm Create.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FC32F42B3CC83C009C544D /* Lamp_Realm_CreateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateApp.swift; sourceTree = "<group>"; };
@@ -62,8 +64,6 @@
 		B8FC33102B3CC83D009C544D /* Lamp_Realm_CreateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateUITests.swift; sourceTree = "<group>"; };
 		B8FC33122B3CC83D009C544D /* Lamp_Realm_CreateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp_Realm_CreateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8FC33272B3CEEB8009C544D /* genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
-		B8FC33282B3CEEB8009C544D /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = books.json; path = "../../../../SynologyDrive/Work/Personal/Bible App/schema/seed_data/books.json"; sourceTree = "<group>"; };
-		B8FC33372B3DFF59009C544D /* plans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plans.json; sourceTree = "<group>"; };
 		B8FC334A2B3F51C8009C544D /* cross_references.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cross_references.json; sourceTree = "<group>"; };
 		C45DF2EFEF424451B24E86E4 /* Pods_Lamp_Realm_CreateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lamp_Realm_CreateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBA1FCF9E12158620C8BC78 /* Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lamp_Realm_Create_Lamp_Realm_CreateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,10 +134,10 @@
 			children = (
 				B8FC32F42B3CC83C009C544D /* Lamp_Realm_CreateApp.swift */,
 				B8FC32F62B3CC83C009C544D /* ContentView.swift */,
-				B8FC33282B3CEEB8009C544D /* books.json */,
+				B82B7EC52B7F163400D4095E /* books.json */,
 				B8FC334A2B3F51C8009C544D /* cross_references.json */,
+				B82B7ECD2B805C8F00D4095E /* plans.json */,
 				B861BEFB2B43609C001CA38E /* translations.json */,
-				B8FC33372B3DFF59009C544D /* plans.json */,
 				B8FC33272B3CEEB8009C544D /* genres.json */,
 				B8FC32F82B3CC83D009C544D /* Assets.xcassets */,
 				B8FC32FD2B3CC83D009C544D /* Lamp_Realm_Create.entitlements */,
@@ -293,9 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8FC33382B3DFF5A009C544D /* plans.json in Resources */,
+				B82B7ECE2B805C8F00D4095E /* plans.json in Resources */,
+				B82B7EC62B7F163400D4095E /* books.json in Resources */,
 				B861BEFC2B43609C001CA38E /* translations.json in Resources */,
-				B8FC33312B3CEEBA009C544D /* books.json in Resources */,
 				B8FC32FC2B3CC83D009C544D /* Preview Assets.xcassets in Resources */,
 				B8FC334C2B3F51C8009C544D /* cross_references.json in Resources */,
 				B8FC33302B3CEEBA009C544D /* genres.json in Resources */,

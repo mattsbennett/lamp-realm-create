@@ -39,7 +39,10 @@ struct ContentView: View {
                             realm.add(book)
                         }
                     }
-                } catch { print("JSON decode error") }
+                } catch {
+                    print("JSON decode error")
+                    print(error)
+                }
             }
             
             if let jsonGenresData = readFile(forName: "genres") {
@@ -55,7 +58,10 @@ struct ContentView: View {
                             realm.add(genre)
                         }
                     }
-                } catch { print("JSON decode error") }
+                } catch {
+                    print("JSON decode error")
+                    print(error)
+                }
             }
             
             if let jsonPlansData = readFile(forName: "plans") {
@@ -71,7 +77,10 @@ struct ContentView: View {
                             realm.add(plan)
                         }
                     }
-                } catch { print("JSON decode error") }
+                } catch {
+                    print("JSON decode error")
+                    print(error)
+                }
             }
             
             if let jsonTranslationsData = readFile(forName: "translations") {
@@ -87,7 +96,10 @@ struct ContentView: View {
                             realm.add(translation)
                         }
                     }
-                } catch { print(error) }
+                } catch {
+                    print("JSON decode error")
+                    print(error)
+                }
             }
             
             if let jsonCrossRefData = readFile(forName: "cross_references") {
@@ -104,7 +116,10 @@ struct ContentView: View {
                             realm.add(crossReference)
                         }
                     }
-                } catch { print(error) }
+                } catch {
+                    print("JSON decode error")
+                    print(error)
+                }
             }
             
             try! createBundledRealm()
@@ -194,7 +209,7 @@ class CrossReference: RealmSwiftObject, Decodable {
     @Persisted var ev: Int?
 }
 
-class User: RealmSwiftObject {
+class User: RealmSwiftObject, Identifiable {
     @Persisted var plans = RealmSwift.List<Plan>()
     @Persisted var planInAppBible = true
     @Persisted var planExternalBible: String? = nil
@@ -209,6 +224,18 @@ class User: RealmSwiftObject {
     @Persisted var readerTranslation: Translation? = nil
     @Persisted var readerCrossReferenceSort = "r"
     @Persisted var readerFontSize: Float = 16
+    @Persisted var completedReadings = RealmSwift.List<CompletedReading>()
+    
+    let defaultTranslationId = 3
+}
+
+class CompletedReading: RealmSwiftObject, Identifiable {
+    @Persisted(primaryKey: true) var id: String
+
+    convenience init(id: String) {
+        self.init()
+        self.id = id
+    }
 }
 
 //try await createBundledRealm()
