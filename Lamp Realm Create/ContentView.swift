@@ -25,6 +25,8 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
         }.task {
+            // Delete existing Realm database to start fresh
+            try! deleteRealmDatabase()
             let realm = try! await Realm()
             if let jsonBooksData = readFile(forName: "books") {
                 let decoder = JSONDecoder()
@@ -33,9 +35,10 @@ struct ContentView: View {
                     let decodedData = try decoder.decode([Book].self, from: jsonBooksData)
                     print("book count: ", decodedData.count)
 
-                    for eachBook in decodedData {
-                        let book = Book(value: eachBook)
-                        try! realm.write {
+                    // Batch operation for better performance
+                    try! realm.write {
+                        for eachBook in decodedData {
+                            let book = Book(value: eachBook)
                             realm.add(book)
                         }
                     }
@@ -52,9 +55,10 @@ struct ContentView: View {
                     let decodedData = try decoder.decode([Genre].self, from: jsonGenresData)
                     print("genre count: ", decodedData.count)
 
-                    for eachGenre in decodedData {
-                        let genre = Genre(value: eachGenre)
-                        try! realm.write {
+                    // Batch operation for better performance
+                    try! realm.write {
+                        for eachGenre in decodedData {
+                            let genre = Genre(value: eachGenre)
                             realm.add(genre)
                         }
                     }
@@ -71,9 +75,10 @@ struct ContentView: View {
                     let decodedData = try decoder.decode([Plan].self, from: jsonPlansData)
                     print("plan count: ", decodedData.count)
 
-                    for eachPlan in decodedData {
-                        let plan = Plan(value: eachPlan)
-                        try! realm.write {
+                    // Batch operation for better performance
+                    try! realm.write {
+                        for eachPlan in decodedData {
+                            let plan = Plan(value: eachPlan)
                             realm.add(plan)
                         }
                     }
@@ -90,9 +95,10 @@ struct ContentView: View {
                     let decodedData = try decoder.decode([Translation].self, from: jsonTranslationsData)
                     print("translations count: ", decodedData.count)
 
-                    for eachTranslation in decodedData {
-                        let translation = Translation(value: eachTranslation)
-                        try! realm.write {
+                    // Batch operation for better performance
+                    try! realm.write {
+                        for eachTranslation in decodedData {
+                            let translation = Translation(value: eachTranslation)
                             realm.add(translation)
                         }
                     }
@@ -109,7 +115,7 @@ struct ContentView: View {
                     let decodedData = try decoder.decode([CrossReference].self, from: jsonCrossRefData)
                     print("crossRefs count: ", decodedData.count)
 
-                    // Transactions are costly, so much faster with many records here to add then all in a single transaction
+                    // Transactions are costly, so much faster with many records here to add them all in a single transaction
                     try! realm.write {
                         for eachCrossRef in decodedData {
                             let crossReference = CrossReference(value: eachCrossRef)
@@ -122,9 +128,13 @@ struct ContentView: View {
                 }
             }
             
-            try! createBundledRealm()
+            do {
+                try createBundledRealm()
+            } catch {
+                print("Error creating bundled realm: \(error)")
+            }
             
-            print("no file")
+            print("Database creation completed")
         }
         .padding()
     }
@@ -142,6 +152,27 @@ private func readFile(forName name: String) -> Data? {
         }
         return nil
     }
+
+private func deleteRealmDatabase() throws {
+    let realmURL = Realm.Configuration.defaultConfiguration.fileURL!
+    let realmURLs = [
+        realmURL,
+        realmURL.appendingPathExtension("lock"),
+        realmURL.appendingPathExtension("note"),
+        realmURL.appendingPathExtension("management")
+    ]
+    
+    for url in realmURLs {
+        do {
+            try FileManager.default.removeItem(at: url)
+        } catch CocoaError.fileNoSuchFile {
+            // File doesn't exist, which is fine
+        } catch {
+            // Re-throw other errors
+            throw error
+        }
+    }
+}
 
 class Genre: RealmSwiftObject, Decodable {
     @Persisted(primaryKey: true) var id: Int
@@ -243,7 +274,7 @@ class CompletedReading: RealmSwiftObject, Identifiable {
 // Opening a realm and accessing it must be done from the same thread.
 // Marking this function as `@MainActor` avoids threading-related issues.
 //@MainActor
-func createBundledRealm() {
+func createBundledRealm() throws {
     // Get the file URL for the default Realm
     guard let defaultRealmURL = Realm.Configuration.defaultConfiguration.fileURL else { return }
 
@@ -252,7 +283,13 @@ func createBundledRealm() {
     let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
     let destinationURL = documentsURL.appendingPathComponent("lamp.realm")
 
-    // Copy the Realm file to the destination URL:
-    // /Users/matthewbennett/Library/Containers/com.neus.Lamp-Realm-Create/Data/Library/Application Support
-    try! fileManager.copyItem(at: defaultRealmURL, to: destinationURL)
+    // Remove existing file if it exists
+    if fileManager.fileExists(atPath: destinationURL.path) {
+        try fileManager.removeItem(at: destinationURL)
+    }
+
+    // Copy the Realm file to the destination URL
+    try fileManager.copyItem(at: defaultRealmURL, to: destinationURL)
+    
+    print("Successfully created bundled Realm at: \(destinationURL.path)")
 }
